@@ -1,0 +1,2512 @@
+<div class="panel panel-default aqi-panel" style="">
+ <!-- <div class="panel-heading"> -->
+ <!--   <h3 class="panel-title">Station, City, State</h3> -->
+ <!-- </div> -->
+ <div class="panel-body" id="data-available-panel">
+  <div class="row">
+   <div class="col-md-4">
+    <div class="aqi-meter-panel station-down">
+     <div class="aqi-meter" id="aqi-meter" style="height:150px">
+      <svg height="100%" preserveaspectratio="xMidYMid meet" style="overflow: hidden; position: relative;" version="1.1" viewbox="0 0 200 150" width="100%" xmlns="http://www.w3.org/2000/svg">
+       <desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+        Created with Raphaël 2.1.2
+       </desc>
+       <defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+        <filter id="inner-shadow">
+         <feoffset dx="0" dy="3">
+         </feoffset>
+         <fegaussianblur result="offset-blur" stddeviation="5">
+         </fegaussianblur>
+         <fecomposite in="SourceGraphic" in2="offset-blur" operator="out" result="inverse">
+         </fecomposite>
+         <feflood flood-color="black" flood-opacity="0.2" result="color">
+         </feflood>
+         <fecomposite in="color" in2="inverse" operator="in" result="shadow">
+         </fecomposite>
+         <fecomposite in="shadow" in2="SourceGraphic" operator="over">
+         </fecomposite>
+        </filter>
+       </defs>
+       <path d="M53.125,120L25,120A75,75,0,0,1,175,120L146.875,120A46.875,46.875,0,0,0,53.125,120Z" fill="#edebeb" filter="url(#inner-shadow)" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+       </path>
+       <path d="M53.125,120L25,120A75,75,0,0,1,28.1108658236968,98.6235553147518L55.0692911398105,106.63972207171987A46.875,46.875,0,0,0,53.125,120Z" fill="#00b050" filter="url(#inner-shadow)" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+       </path>
+       <text fill="#000000" fill-opacity="1" font='10px "Arial"' font-family="Arial" font-size="15px" font-weight="bold" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font: bold 15px Arial; fill-opacity: 1;" text-anchor="middle" x="100" y="23.4375">
+        <tspan dy="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+         Good
+        </tspan>
+       </text>
+       <text fill="#010101" fill-opacity="1" font='10px "Arial"' font-family="Arial" font-size="23px" font-weight="bold" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font: bold 23px Arial; fill-opacity: 1;" text-anchor="middle" x="100" y="117.64705882352942">
+        <tspan dy="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+         46
+        </tspan>
+       </text>
+       <text fill="#b3b3b3" fill-opacity="1" font='10px "Arial"' font-family="Arial" font-size="10px" font-weight="normal" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font: 10px Arial; fill-opacity: 1;" text-anchor="middle" x="100" y="134.18552036199097">
+        <tspan dy="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+         AQI
+        </tspan>
+       </text>
+       <text fill="#b3b3b3" fill-opacity="1" font='10px "Arial"' font-family="Arial" font-size="10px" font-weight="normal" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font: 10px Arial; fill-opacity: 1;" text-anchor="middle" x="39.0625" y="134.18552036199097">
+        <tspan dy="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+         0
+        </tspan>
+       </text>
+       <text fill="#b3b3b3" fill-opacity="1" font='10px "Arial"' font-family="Arial" font-size="10px" font-weight="normal" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font: 10px Arial; fill-opacity: 1;" text-anchor="middle" x="160.9375" y="134.18552036199097">
+        <tspan dy="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+         500
+        </tspan>
+       </text>
+      </svg>
+     </div>
+     <div class="insuf-data-panel well">
+      Insufficient data for computing AQI
+     </div>
+     <div class="station-down-panel well" id="station-down-message">
+      Insufficient data for computing AQI
+     </div>
+    </div>
+   </div>
+   <div class="col-md-8">
+    <table class="table table-condensed">
+     <tbody>
+      <tr class="active">
+       <td class="title">
+        Ashok Vihar, Delhi - DPCC
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Prominent Pollutant is
+        <big>
+         <span class="prominent-param label label-default">
+          CO
+         </span>
+        </big>
+       </td>
+      </tr>
+      <tr>
+       <td>
+        On
+        <big>
+         <span class="date-on label label-info">
+          Tuesday, 31 Aug 2021 04:00 PM
+         </span>
+        </big>
+       </td>
+      </tr>
+     </tbody>
+    </table>
+   </div>
+  </div>
+  <table class="table table-hover table-condensed">
+   <thead>
+    <tr>
+     <th class="col-md-1 col-sm-1 col-xs-1">
+      Pollutant
+     </th>
+     <th class="col-md-8 col-sm-8 col-xs-8 text-center">
+      Timeline
+     </th>
+     <th class="col-md-1 col-sm-1 col-xs-1" title="Average">
+      Avg
+     </th>
+     <th class="col-md-1 col-sm-1 col-xs-1" title="Minimum">
+      Min
+     </th>
+     <th class="col-md-1 col-sm-1 col-xs-1" title="Maximum">
+      Max
+     </th>
+    </tr>
+   </thead>
+   <tbody class="metrics-container">
+    <tr class="metrics-row" style="">
+     <td class="element-name">
+      PM2.5
+     </td>
+     <td class="graph-container">
+      <div style="position: relative;">
+       <div dir="ltr" style="position: relative; width: 557px; height: 25px;">
+        <div aria-label="A chart." style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;">
+         <svg aria-label="A chart." height="25" style="overflow: hidden;" width="557">
+          <defs id="_ABSTRACT_RENDERER_ID_50">
+           <clippath id="_ABSTRACT_RENDERER_ID_51">
+            <rect height="25" width="557" x="0" y="0">
+            </rect>
+           </clippath>
+          </defs>
+          <rect fill="#ffffff" height="25" stroke="none" stroke-width="0" width="557" x="0" y="0">
+          </rect>
+          <g>
+           <rect fill="#ffffff" fill-opacity="0" height="25" stroke="none" stroke-width="0" width="557" x="0" y="0">
+           </rect>
+           <g clip-path="url(https://app.cpcbccr.com/AQI_India/#_ABSTRACT_RENDERER_ID_51)">
+            <g>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="12" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="12" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="36" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="60" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="60" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="85" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="109" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="109" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="133" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="157" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="157" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="181" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="205" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="205" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="230" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="254" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="254" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="278" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="302" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="302" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="326" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="351" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="351" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="375" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="399" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="399" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="423" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="447" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="447" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="471" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="496" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="496" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="520" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="544" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="544" y="20">
+             </rect>
+            </g>
+            <g>
+             <rect fill="#00b050" height="23" stroke="#caccdc" stroke-width="1" width="22" x="316" y="1">
+             </rect>
+             <rect fill="#00b050" height="15" stroke="#caccdc" stroke-width="1" width="22" x="340" y="9">
+             </rect>
+             <rect fill="#00b050" height="20" stroke="#caccdc" stroke-width="1" width="22" x="388" y="4">
+             </rect>
+             <rect fill="#00b050" height="5" stroke="#caccdc" stroke-width="1" width="22" x="461" y="19">
+             </rect>
+             <rect fill="#00b050" height="10" stroke="#caccdc" stroke-width="1" width="21" x="534" y="14">
+             </rect>
+            </g>
+            <g>
+             <rect fill="#333333" height="1" stroke="none" stroke-width="0" width="557" x="0" y="24">
+             </rect>
+            </g>
+           </g>
+           <g>
+           </g>
+          </g>
+          <g>
+          </g>
+         </svg>
+         <div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;">
+          <table>
+           <thead>
+            <tr>
+             <th>
+              Time
+             </th>
+             <th>
+              ParameterIndex
+             </th>
+            </tr>
+           </thead>
+           <tbody>
+            <tr>
+             <td>
+              Aug 30, 2021, 6:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 30, 2021, 7:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 30, 2021, 8:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 30, 2021, 9:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 30, 2021, 10:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 30, 2021, 11:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 12:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 1:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 2:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 3:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 4:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 5:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 6:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 7:00:00 AM
+             </td>
+             <td>
+              48
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 8:00:00 AM
+             </td>
+             <td>
+              33
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 9:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 10:00:00 AM
+             </td>
+             <td>
+              42
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 11:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 12:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 1:00:00 PM
+             </td>
+             <td>
+              13
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 2:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 3:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 4:00:00 PM
+             </td>
+             <td>
+              23
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </div>
+        </div>
+       </div>
+       <div aria-hidden="true" style="display: none; position: absolute; top: 35px; left: 567px; white-space: nowrap; font-family: Arial; font-size: 11px;">
+        4:00
+       </div>
+       <div>
+       </div>
+      </div>
+     </td>
+     <td class="avg-value" title="Over the last 24 hours">
+     </td>
+     <td class="min-value" title="Over the last 24 hours">
+      -
+     </td>
+     <td class="max-value" title="Over the last 24 hours">
+      -
+     </td>
+    </tr>
+    <tr class="metrics-row" style="">
+     <td class="element-name">
+      PM10
+     </td>
+     <td class="graph-container">
+      <div style="position: relative;">
+       <div dir="ltr" style="position: relative; width: 560px; height: 25px;">
+        <div aria-label="A chart." style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;">
+         <svg aria-label="A chart." height="25" style="overflow: hidden;" width="560">
+          <defs id="_ABSTRACT_RENDERER_ID_52">
+           <clippath id="_ABSTRACT_RENDERER_ID_53">
+            <rect height="25" width="560" x="0" y="0">
+            </rect>
+           </clippath>
+          </defs>
+          <rect fill="#ffffff" height="25" stroke="none" stroke-width="0" width="560" x="0" y="0">
+          </rect>
+          <g>
+           <rect fill="#ffffff" fill-opacity="0" height="25" stroke="none" stroke-width="0" width="560" x="0" y="0">
+           </rect>
+           <g clip-path="url(https://app.cpcbccr.com/AQI_India/#_ABSTRACT_RENDERER_ID_53)">
+            <g>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="12" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="12" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="36" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="61" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="61" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="85" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="109" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="109" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="134" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="158" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="158" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="182" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="207" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="207" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="231" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="255" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="255" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="280" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="304" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="304" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="328" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="352" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="352" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="377" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="401" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="401" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="425" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="450" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="450" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="474" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="498" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="498" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="523" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="547" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="547" y="20">
+             </rect>
+            </g>
+            <g>
+             <rect fill="#92d050" height="17" stroke="#caccdc" stroke-width="1" width="22" x="318" y="7">
+             </rect>
+             <rect fill="#00b050" height="16" stroke="#caccdc" stroke-width="1" width="22" x="342" y="8">
+             </rect>
+             <rect fill="#92d050" height="23" stroke="#caccdc" stroke-width="1" width="21" x="391" y="1">
+             </rect>
+             <rect fill="#00b050" height="4" stroke="#caccdc" stroke-width="1" width="22" x="463" y="20">
+             </rect>
+             <rect fill="#00b050" height="5" stroke="#caccdc" stroke-width="1" width="22" x="536" y="19">
+             </rect>
+            </g>
+            <g>
+             <rect fill="#333333" height="1" stroke="none" stroke-width="0" width="560" x="0" y="24">
+             </rect>
+            </g>
+           </g>
+           <g>
+           </g>
+          </g>
+          <g>
+          </g>
+         </svg>
+         <div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;">
+          <table>
+           <thead>
+            <tr>
+             <th>
+              Time
+             </th>
+             <th>
+              ParameterIndex
+             </th>
+            </tr>
+           </thead>
+           <tbody>
+            <tr>
+             <td>
+              Aug 30, 2021, 6:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 30, 2021, 7:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 30, 2021, 8:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 30, 2021, 9:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 30, 2021, 10:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 30, 2021, 11:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 12:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 1:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 2:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 3:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 4:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 5:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 6:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 7:00:00 AM
+             </td>
+             <td>
+              51
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 8:00:00 AM
+             </td>
+             <td>
+              48
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 9:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 10:00:00 AM
+             </td>
+             <td>
+              67
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 11:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 12:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 1:00:00 PM
+             </td>
+             <td>
+              14
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 2:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 3:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 4:00:00 PM
+             </td>
+             <td>
+              16
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </div>
+        </div>
+       </div>
+       <div aria-hidden="true" style="display: none; position: absolute; top: 35px; left: 570px; white-space: nowrap; font-family: Arial; font-size: 11px;">
+        4:00
+       </div>
+       <div>
+       </div>
+      </div>
+     </td>
+     <td class="avg-value" title="Over the last 24 hours">
+     </td>
+     <td class="min-value" title="Over the last 24 hours">
+      -
+     </td>
+     <td class="max-value" title="Over the last 24 hours">
+      -
+     </td>
+    </tr>
+    <tr class="metrics-row" style="">
+     <td class="element-name">
+      NO2
+     </td>
+     <td class="graph-container">
+      <div style="position: relative;">
+       <div dir="ltr" style="position: relative; width: 560px; height: 25px;">
+        <div aria-label="A chart." style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;">
+         <svg aria-label="A chart." height="25" style="overflow: hidden;" width="560">
+          <defs id="_ABSTRACT_RENDERER_ID_54">
+           <clippath id="_ABSTRACT_RENDERER_ID_55">
+            <rect height="25" width="560" x="0" y="0">
+            </rect>
+           </clippath>
+          </defs>
+          <rect fill="#ffffff" height="25" stroke="none" stroke-width="0" width="560" x="0" y="0">
+          </rect>
+          <g>
+           <rect fill="#ffffff" fill-opacity="0" height="25" stroke="none" stroke-width="0" width="560" x="0" y="0">
+           </rect>
+           <g clip-path="url(https://app.cpcbccr.com/AQI_India/#_ABSTRACT_RENDERER_ID_55)">
+            <g>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="12" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="12" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="36" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="61" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="61" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="85" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="109" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="109" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="134" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="158" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="158" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="182" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="207" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="207" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="231" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="255" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="255" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="280" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="304" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="304" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="328" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="352" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="352" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="377" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="401" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="401" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="425" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="450" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="450" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="474" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="498" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="498" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="523" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="547" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="547" y="20">
+             </rect>
+            </g>
+            <g>
+             <rect fill="#00b050" height="9" stroke="#caccdc" stroke-width="1" width="22" x="318" y="15">
+             </rect>
+             <rect fill="#00b050" height="9" stroke="#caccdc" stroke-width="1" width="22" x="342" y="15">
+             </rect>
+             <rect fill="#00b050" height="9" stroke="#caccdc" stroke-width="1" width="21" x="391" y="15">
+             </rect>
+             <rect fill="#00b050" height="11" stroke="#caccdc" stroke-width="1" width="22" x="463" y="13">
+             </rect>
+             <rect fill="#00b050" height="12" stroke="#caccdc" stroke-width="1" width="22" x="536" y="12">
+             </rect>
+            </g>
+            <g>
+             <rect fill="#333333" height="1" stroke="none" stroke-width="0" width="560" x="0" y="24">
+             </rect>
+            </g>
+           </g>
+           <g>
+           </g>
+          </g>
+          <g>
+          </g>
+         </svg>
+         <div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;">
+          <table>
+           <thead>
+            <tr>
+             <th>
+              Time
+             </th>
+             <th>
+              ParameterIndex
+             </th>
+            </tr>
+           </thead>
+           <tbody>
+            <tr>
+             <td>
+              Aug 30, 2021, 6:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 30, 2021, 7:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 30, 2021, 8:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 30, 2021, 9:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 30, 2021, 10:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 30, 2021, 11:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 12:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 1:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 2:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 3:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 4:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 5:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 6:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 7:00:00 AM
+             </td>
+             <td>
+              24
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 8:00:00 AM
+             </td>
+             <td>
+              23
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 9:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 10:00:00 AM
+             </td>
+             <td>
+              23
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 11:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 12:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 1:00:00 PM
+             </td>
+             <td>
+              28
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 2:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 3:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 4:00:00 PM
+             </td>
+             <td>
+              30
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </div>
+        </div>
+       </div>
+       <div aria-hidden="true" style="display: none; position: absolute; top: 35px; left: 570px; white-space: nowrap; font-family: Arial; font-size: 11px;">
+        4:00
+       </div>
+       <div>
+       </div>
+      </div>
+     </td>
+     <td class="avg-value" title="Over the last 24 hours">
+     </td>
+     <td class="min-value" title="Over the last 24 hours">
+      -
+     </td>
+     <td class="max-value" title="Over the last 24 hours">
+      -
+     </td>
+    </tr>
+    <tr class="metrics-row" style="">
+     <td class="element-name">
+      NH3
+     </td>
+     <td class="graph-container">
+      <div style="position: relative;">
+       <div dir="ltr" style="position: relative; width: 560px; height: 25px;">
+        <div aria-label="A chart." style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;">
+         <svg aria-label="A chart." height="25" style="overflow: hidden;" width="560">
+          <defs id="_ABSTRACT_RENDERER_ID_56">
+           <clippath id="_ABSTRACT_RENDERER_ID_57">
+            <rect height="25" width="560" x="0" y="0">
+            </rect>
+           </clippath>
+          </defs>
+          <rect fill="#ffffff" height="25" stroke="none" stroke-width="0" width="560" x="0" y="0">
+          </rect>
+          <g>
+           <rect fill="#ffffff" fill-opacity="0" height="25" stroke="none" stroke-width="0" width="560" x="0" y="0">
+           </rect>
+           <g clip-path="url(https://app.cpcbccr.com/AQI_India/#_ABSTRACT_RENDERER_ID_57)">
+            <g>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="12" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="12" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="36" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="61" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="61" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="85" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="109" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="109" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="134" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="158" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="158" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="182" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="207" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="207" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="231" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="255" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="255" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="280" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="304" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="304" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="328" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="352" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="352" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="377" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="401" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="401" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="425" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="450" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="450" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="474" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="498" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="498" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="523" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="547" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="547" y="20">
+             </rect>
+            </g>
+            <g>
+             <rect fill="#00b050" height="58" stroke="#caccdc" stroke-width="1" width="22" x="318" y="14">
+             </rect>
+             <rect fill="#00b050" height="70" stroke="#caccdc" stroke-width="1" width="22" x="342" y="2">
+             </rect>
+             <rect fill="#00b050" height="70" stroke="#caccdc" stroke-width="1" width="21" x="391" y="2">
+             </rect>
+             <rect fill="#00b050" height="70" stroke="#caccdc" stroke-width="1" width="22" x="463" y="2">
+             </rect>
+             <rect fill="#00b050" height="58" stroke="#caccdc" stroke-width="1" width="22" x="536" y="14">
+             </rect>
+            </g>
+            <g>
+             <rect fill="#333333" height="1" stroke="none" stroke-width="0" width="560" x="0" y="24">
+             </rect>
+            </g>
+           </g>
+           <g>
+           </g>
+          </g>
+          <g>
+          </g>
+         </svg>
+         <div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;">
+          <table>
+           <thead>
+            <tr>
+             <th>
+              Time
+             </th>
+             <th>
+              ParameterIndex
+             </th>
+            </tr>
+           </thead>
+           <tbody>
+            <tr>
+             <td>
+              Aug 30, 2021, 6:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 30, 2021, 7:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 30, 2021, 8:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 30, 2021, 9:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 30, 2021, 10:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 30, 2021, 11:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 12:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 1:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 2:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 3:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 4:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 5:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 6:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 7:00:00 AM
+             </td>
+             <td>
+              5
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 8:00:00 AM
+             </td>
+             <td>
+              6
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 9:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 10:00:00 AM
+             </td>
+             <td>
+              6
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 11:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 12:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 1:00:00 PM
+             </td>
+             <td>
+              6
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 2:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 3:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 4:00:00 PM
+             </td>
+             <td>
+              5
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </div>
+        </div>
+       </div>
+       <div aria-hidden="true" style="display: none; position: absolute; top: 35px; left: 570px; white-space: nowrap; font-family: Arial; font-size: 11px;">
+        4:00
+       </div>
+       <div>
+       </div>
+      </div>
+     </td>
+     <td class="avg-value" title="Over the last 24 hours">
+     </td>
+     <td class="min-value" title="Over the last 24 hours">
+      -
+     </td>
+     <td class="max-value" title="Over the last 24 hours">
+      -
+     </td>
+    </tr>
+    <tr class="metrics-row" style="">
+     <td class="element-name">
+      SO2
+     </td>
+     <td class="graph-container">
+      <div style="position: relative;">
+       <div dir="ltr" style="position: relative; width: 560px; height: 25px;">
+        <div aria-label="A chart." style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;">
+         <svg aria-label="A chart." height="25" style="overflow: hidden;" width="560">
+          <defs id="_ABSTRACT_RENDERER_ID_58">
+           <clippath id="_ABSTRACT_RENDERER_ID_59">
+            <rect height="25" width="560" x="0" y="0">
+            </rect>
+           </clippath>
+          </defs>
+          <rect fill="#ffffff" height="25" stroke="none" stroke-width="0" width="560" x="0" y="0">
+          </rect>
+          <g>
+           <rect fill="#ffffff" fill-opacity="0" height="25" stroke="none" stroke-width="0" width="560" x="0" y="0">
+           </rect>
+           <g clip-path="url(https://app.cpcbccr.com/AQI_India/#_ABSTRACT_RENDERER_ID_59)">
+            <g>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="12" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="12" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="36" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="61" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="61" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="85" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="109" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="109" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="134" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="158" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="158" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="182" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="207" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="207" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="231" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="255" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="255" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="280" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="304" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="304" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="328" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="352" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="352" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="377" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="401" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="401" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="425" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="450" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="450" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="474" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="498" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="498" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="523" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="547" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="547" y="20">
+             </rect>
+            </g>
+            <g>
+             <rect fill="#00b050" height="9" stroke="#caccdc" stroke-width="1" width="22" x="318" y="15">
+             </rect>
+             <rect fill="#00b050" height="12" stroke="#caccdc" stroke-width="1" width="22" x="342" y="12">
+             </rect>
+             <rect fill="#00b050" height="11" stroke="#caccdc" stroke-width="1" width="21" x="391" y="13">
+             </rect>
+             <rect fill="#00b050" height="6" stroke="#caccdc" stroke-width="1" width="22" x="463" y="18">
+             </rect>
+             <rect fill="#00b050" height="6" stroke="#caccdc" stroke-width="1" width="22" x="536" y="18">
+             </rect>
+            </g>
+            <g>
+             <rect fill="#333333" height="1" stroke="none" stroke-width="0" width="560" x="0" y="24">
+             </rect>
+            </g>
+           </g>
+           <g>
+           </g>
+          </g>
+          <g>
+          </g>
+         </svg>
+         <div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;">
+          <table>
+           <thead>
+            <tr>
+             <th>
+              Time
+             </th>
+             <th>
+              ParameterIndex
+             </th>
+            </tr>
+           </thead>
+           <tbody>
+            <tr>
+             <td>
+              Aug 30, 2021, 6:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 30, 2021, 7:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 30, 2021, 8:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 30, 2021, 9:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 30, 2021, 10:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 30, 2021, 11:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 12:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 1:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 2:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 3:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 4:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 5:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 6:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 7:00:00 AM
+             </td>
+             <td>
+              27
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 8:00:00 AM
+             </td>
+             <td>
+              34
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 9:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 10:00:00 AM
+             </td>
+             <td>
+              31
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 11:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 12:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 1:00:00 PM
+             </td>
+             <td>
+              18
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 2:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 3:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 4:00:00 PM
+             </td>
+             <td>
+              20
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </div>
+        </div>
+       </div>
+       <div aria-hidden="true" style="display: none; position: absolute; top: 35px; left: 570px; white-space: nowrap; font-family: Arial; font-size: 11px;">
+        4:00
+       </div>
+       <div>
+       </div>
+      </div>
+     </td>
+     <td class="avg-value" title="Over the last 24 hours">
+     </td>
+     <td class="min-value" title="Over the last 24 hours">
+      -
+     </td>
+     <td class="max-value" title="Over the last 24 hours">
+      -
+     </td>
+    </tr>
+    <tr class="metrics-row" style="">
+     <td class="element-name">
+      CO
+     </td>
+     <td class="graph-container">
+      <div style="position: relative;">
+       <div dir="ltr" style="position: relative; width: 560px; height: 25px;">
+        <div aria-label="A chart." style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;">
+         <svg aria-label="A chart." height="25" style="overflow: hidden;" width="560">
+          <defs id="_ABSTRACT_RENDERER_ID_60">
+           <clippath id="_ABSTRACT_RENDERER_ID_61">
+            <rect height="25" width="560" x="0" y="0">
+            </rect>
+           </clippath>
+          </defs>
+          <rect fill="#ffffff" height="25" stroke="none" stroke-width="0" width="560" x="0" y="0">
+          </rect>
+          <g>
+           <rect fill="#ffffff" fill-opacity="0" height="25" stroke="none" stroke-width="0" width="560" x="0" y="0">
+           </rect>
+           <g clip-path="url(https://app.cpcbccr.com/AQI_India/#_ABSTRACT_RENDERER_ID_61)">
+            <g>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="12" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="12" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="36" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="61" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="61" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="85" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="109" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="109" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="134" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="158" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="158" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="182" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="207" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="207" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="231" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="255" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="255" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="280" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="304" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="304" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="328" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="352" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="352" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="377" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="401" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="401" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="425" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="450" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="450" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="474" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="498" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="498" y="20">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="523" y="20">
+             </rect>
+             <rect fill="#cccccc" height="25" stroke="none" stroke-width="0" width="1" x="547" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="547" y="20">
+             </rect>
+            </g>
+            <g>
+             <rect fill="#00b050" height="8" stroke="#caccdc" stroke-width="1" width="22" x="318" y="16">
+             </rect>
+             <rect fill="#00b050" height="9" stroke="#caccdc" stroke-width="1" width="22" x="342" y="15">
+             </rect>
+             <rect fill="#92d050" height="20" stroke="#caccdc" stroke-width="1" width="21" x="391" y="4">
+             </rect>
+             <rect fill="#92d050" height="23" stroke="#caccdc" stroke-width="1" width="22" x="463" y="1">
+             </rect>
+             <rect fill="#00b050" height="7" stroke="#caccdc" stroke-width="1" width="22" x="536" y="17">
+             </rect>
+            </g>
+            <g>
+             <rect fill="#333333" height="1" stroke="none" stroke-width="0" width="560" x="0" y="24">
+             </rect>
+            </g>
+           </g>
+           <g>
+           </g>
+          </g>
+          <g>
+          </g>
+         </svg>
+         <div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;">
+          <table>
+           <thead>
+            <tr>
+             <th>
+              Time
+             </th>
+             <th>
+              ParameterIndex
+             </th>
+            </tr>
+           </thead>
+           <tbody>
+            <tr>
+             <td>
+              Aug 30, 2021, 6:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 30, 2021, 7:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 30, 2021, 8:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 30, 2021, 9:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 30, 2021, 10:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 30, 2021, 11:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 12:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 1:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 2:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 3:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 4:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 5:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 6:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 7:00:00 AM
+             </td>
+             <td>
+              25
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 8:00:00 AM
+             </td>
+             <td>
+              30
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 9:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 10:00:00 AM
+             </td>
+             <td>
+              62
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 11:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 12:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 1:00:00 PM
+             </td>
+             <td>
+              70
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 2:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 3:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 4:00:00 PM
+             </td>
+             <td>
+              23
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </div>
+        </div>
+       </div>
+       <div aria-hidden="true" style="display: none; position: absolute; top: 35px; left: 570px; white-space: nowrap; font-family: Arial; font-size: 11px;">
+        4:00
+       </div>
+       <div>
+       </div>
+      </div>
+     </td>
+     <td class="avg-value" title="Over the last 8 hours">
+      46
+     </td>
+     <td class="min-value" title="Over the last 8 hours">
+      23
+     </td>
+     <td class="max-value" title="Over the last 8 hours">
+      70
+     </td>
+    </tr>
+    <tr class="metrics-row" style="">
+     <td class="element-name">
+      OZONE
+     </td>
+     <td class="graph-container">
+      <div style="position: relative;">
+       <div dir="ltr" style="position: relative; width: 560px; height: 40px;">
+        <div aria-label="A chart." style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;">
+         <svg aria-label="A chart." height="40" style="overflow: hidden;" width="560">
+          <defs id="_ABSTRACT_RENDERER_ID_62">
+           <clippath id="_ABSTRACT_RENDERER_ID_63">
+            <rect height="24" width="560" x="0" y="0">
+            </rect>
+           </clippath>
+          </defs>
+          <rect fill="#ffffff" height="40" stroke="none" stroke-width="0" width="560" x="0" y="0">
+          </rect>
+          <g>
+           <rect fill="#ffffff" fill-opacity="0" height="24" stroke="none" stroke-width="0" width="560" x="0" y="0">
+           </rect>
+           <g clip-path="url(https://app.cpcbccr.com/AQI_India/#_ABSTRACT_RENDERER_ID_63)">
+            <g>
+             <rect fill="#cccccc" height="24" stroke="none" stroke-width="0" width="1" x="12" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="12" y="19">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="36" y="19">
+             </rect>
+             <rect fill="#cccccc" height="24" stroke="none" stroke-width="0" width="1" x="61" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="61" y="19">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="85" y="19">
+             </rect>
+             <rect fill="#cccccc" height="24" stroke="none" stroke-width="0" width="1" x="109" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="109" y="19">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="134" y="19">
+             </rect>
+             <rect fill="#cccccc" height="24" stroke="none" stroke-width="0" width="1" x="158" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="158" y="19">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="182" y="19">
+             </rect>
+             <rect fill="#cccccc" height="24" stroke="none" stroke-width="0" width="1" x="207" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="207" y="19">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="231" y="19">
+             </rect>
+             <rect fill="#cccccc" height="24" stroke="none" stroke-width="0" width="1" x="255" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="255" y="19">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="280" y="19">
+             </rect>
+             <rect fill="#cccccc" height="24" stroke="none" stroke-width="0" width="1" x="304" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="304" y="19">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="328" y="19">
+             </rect>
+             <rect fill="#cccccc" height="24" stroke="none" stroke-width="0" width="1" x="352" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="352" y="19">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="377" y="19">
+             </rect>
+             <rect fill="#cccccc" height="24" stroke="none" stroke-width="0" width="1" x="401" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="401" y="19">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="425" y="19">
+             </rect>
+             <rect fill="#cccccc" height="24" stroke="none" stroke-width="0" width="1" x="450" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="450" y="19">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="474" y="19">
+             </rect>
+             <rect fill="#cccccc" height="24" stroke="none" stroke-width="0" width="1" x="498" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="498" y="19">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="523" y="19">
+             </rect>
+             <rect fill="#cccccc" height="24" stroke="none" stroke-width="0" width="1" x="547" y="0">
+             </rect>
+             <rect fill="#cccccc" height="5" stroke="none" stroke-width="0" width="1" x="547" y="19">
+             </rect>
+            </g>
+            <g>
+             <rect fill="#00b050" height="6" stroke="#caccdc" stroke-width="1" width="22" x="318" y="17">
+             </rect>
+             <rect fill="#00b050" height="6" stroke="#caccdc" stroke-width="1" width="22" x="342" y="17">
+             </rect>
+             <rect fill="#00b050" height="11" stroke="#caccdc" stroke-width="1" width="21" x="391" y="12">
+             </rect>
+             <rect fill="#00b050" height="6" stroke="#caccdc" stroke-width="1" width="22" x="463" y="17">
+             </rect>
+             <rect fill="#00b050" height="6" stroke="#caccdc" stroke-width="1" width="22" x="536" y="17">
+             </rect>
+            </g>
+            <g>
+             <rect fill="#333333" height="1" stroke="none" stroke-width="0" width="560" x="0" y="23">
+             </rect>
+            </g>
+           </g>
+           <g>
+           </g>
+           <g>
+            <g>
+             <text fill="#444444" font-family="Arial" font-size="11" stroke="none" stroke-width="0" text-anchor="middle" x="12.652173913043478" y="35.85">
+              6P…
+             </text>
+             <rect fill="#ffffff" fill-opacity="0" height="11" stroke="none" stroke-width="0" width="24" x="0.6521739130434785" y="26.5">
+             </rect>
+            </g>
+            <g>
+             <text fill="#444444" font-family="Arial" font-size="11" stroke="none" stroke-width="0" text-anchor="middle" x="109.86956521739131" y="35.85">
+              10PM, Mon
+             </text>
+            </g>
+            <g>
+             <text fill="#444444" font-family="Arial" font-size="11" stroke="none" stroke-width="0" text-anchor="middle" x="207.08695652173913" y="35.85">
+              2AM, Tue
+             </text>
+            </g>
+            <g>
+             <text fill="#444444" font-family="Arial" font-size="11" stroke="none" stroke-width="0" text-anchor="middle" x="304.30434782608694" y="35.85">
+              6AM, Tue
+             </text>
+            </g>
+            <g>
+             <text fill="#444444" font-family="Arial" font-size="11" stroke="none" stroke-width="0" text-anchor="middle" x="401.5217391304348" y="35.85">
+              10AM, Tue
+             </text>
+            </g>
+            <g>
+             <text fill="#444444" font-family="Arial" font-size="11" stroke="none" stroke-width="0" text-anchor="middle" x="498.7391304347826" y="35.85">
+              2PM, Tue
+             </text>
+            </g>
+           </g>
+          </g>
+          <g>
+          </g>
+         </svg>
+         <div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;">
+          <table>
+           <thead>
+            <tr>
+             <th>
+              Time
+             </th>
+             <th>
+              ParameterIndex
+             </th>
+            </tr>
+           </thead>
+           <tbody>
+            <tr>
+             <td>
+              Aug 30, 2021, 6:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 30, 2021, 7:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 30, 2021, 8:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 30, 2021, 9:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 30, 2021, 10:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 30, 2021, 11:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 12:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 1:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 2:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 3:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 4:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 5:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 6:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 7:00:00 AM
+             </td>
+             <td>
+              16
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 8:00:00 AM
+             </td>
+             <td>
+              17
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 9:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 10:00:00 AM
+             </td>
+             <td>
+              30
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 11:00:00 AM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 12:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 1:00:00 PM
+             </td>
+             <td>
+              17
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 2:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 3:00:00 PM
+             </td>
+             <td>
+              NaN
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Aug 31, 2021, 4:00:00 PM
+             </td>
+             <td>
+              18
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </div>
+        </div>
+       </div>
+       <div aria-hidden="true" style="display: none; position: absolute; top: 50px; left: 570px; white-space: nowrap; font-family: Arial; font-size: 11px;">
+        4PM,…
+       </div>
+       <div>
+       </div>
+      </div>
+     </td>
+     <td class="avg-value" title="Over the last 8 hours">
+      20
+     </td>
+     <td class="min-value" title="Over the last 8 hours">
+      16
+     </td>
+     <td class="max-value" title="Over the last 8 hours">
+      30
+     </td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+ <div class="panel-body text-center" id="no-data-panel">
+  <h1>
+   No Data Available
+  </h1>
+ </div>
+ <div class="panel-body text-center" id="no-response-panel">
+  <h1>
+   Network Error
+  </h1>
+  <h3>
+   No response from server.
+  </h3>
+ </div>
+</div>
